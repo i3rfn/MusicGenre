@@ -1,1 +1,1 @@
-# MusicGenre
+# MusicGenre miniProject
