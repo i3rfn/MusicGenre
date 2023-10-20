@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #dbdbdb;
+}
+::-webkit-scrollbar-thumb {
+  background: #848484;
+}
+@font-face {
+  font-family: tektur;
+  src: url(./media/Poppins-Regular.woff);
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url(./media/Poppins-Bold.woff);
+}
+div.pedar {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  background-attachment: fixed;
+  font-family: tektur;
+  position: relative;
+}
+div.pedar > div.menu {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+div.pedar > div.menu > ul {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+div.pedar > div.menu > ul > li {
+  width: 100px;
+  height: inherit;
+  list-style: none;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.pedar > div.menu > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: all 300ms linear;
+}
+div.pedar > div.menu > ul > li > a:hover {
+  font-size: 28px;
+  border-bottom: 3px solid gray;
+}
+div.pedar > div.gozine {
+  width: 150px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 380px;
+}
+div.pedar > div.gozine > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+}
+div.pedar > div.gozine > ul > li {
+  width: 100%;
+  height: 30px;
+  margin-left: 50px;
+}
+div.pedar > div.gozine > ul > li > a {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: tektur;
+  transition: all 200ms linear;
+  transform-origin: center;
+  filter: drop-shadow(2px 2px 2px black);
+}
+div.pedar > div.gozine > ul > li > a:hover {
+  font-size: 20px;
+  font-weight: bold;
+}
+div.pedar > div.content {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+div.pedar > div.content > h1 {
+  font-size: 160px;
+  color: white;
+  font-weight: 600;
+  transition: all 500ms linear;
+  user-select: none;
+}
+div.pedar > div.content > h1:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+div.pedar > div.content > a {
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 50px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.164);
+  filter: drop-shadow(2px 2px 2px black);
+  transition: all 300ms linear;
+}
+div.pedar > div.content > a:hover {
+  font-size: 32px;
+}
+div.pedar > video.back {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+  .back {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back {
+    width: auto;
+    height: 100%;
+  }
+}
+div.prallax1 {
+  background-image: url(./media/matthew-moloney-5kYKzH5Gwgk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  font-family: tektur;
+}
+div.prallax1 > div.box {
+  width: 1000px;
+  background-color: rgba(211, 211, 211, 0.164);
+  padding: 30px 60px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 30px;
+}
+div.prallax1 > div.box > h1 {
+  font-size: 36px;
+  font-family: poppins-bold;
+}
+div.prallax1 > div.box > p {
+  color: white;
+  font-size: 22px;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+div.prallax2 {
+  background-image: url(./media/austin-neill-_uzJEiPETvY-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  font-family: tektur;
+}
+div.prallax2 > div.box {
+  width: 1000px;
+  background-color: rgba(211, 211, 211, 0.164);
+  padding: 30px 60px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 30px;
+}
+div.prallax2 > div.box > h1 {
+  font-size: 36px;
+  font-family: poppins-bold;
+}
+div.prallax2 > div.box > p {
+  color: white;
+  font-size: 22px;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+div.prallax3 {
+  background-image: url(./media/wp6196433-jazz-photograph-wallpapers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  font-family: tektur;
+}
+div.prallax3 > div.box {
+  width: 1000px;
+  background-color: rgba(211, 211, 211, 0.164);
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 30px;
+}
+div.prallax3 > div.box > h1 {
+  font-size: 36px;
+  font-family: poppins-bold;
+}
+div.prallax3 > div.box > p {
+  color: white;
+  font-size: 22px;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+div.prallax4 {
+  background-image: url(./media/hector-bermudez-iIWDt0fXa84-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  font-family: tektur;
+}
+div.prallax4 > div.box {
+  width: 1000px;
+  background-color: rgba(211, 211, 211, 0.164);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 30px;
+}
+div.prallax4 > div.box > h1 {
+  font-size: 36px;
+  font-family: poppins-bold;
+}
+div.prallax4 > div.box > p {
+  color: white;
+  font-size: 23px;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+div.prallax5 {
+  background-image: url(./media/vidar-nordli-mathisen-ABHgx0QXFV0-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  font-family: tektur;
+}
+div.prallax5 > div.box {
+  width: 1000px;
+  background-color: rgba(211, 211, 211, 0.164);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 30px;
+}
+div.prallax5 > div.box > h1 {
+  font-size: 36px;
+  font-family: poppins-bold;
+}
+div.prallax5 > div.box > p {
+  color: white;
+  font-size: 22px;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+div.prallax6 {
+  background-image: url(./media/hans-vivek-By96LAr-34o-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  font-family: tektur;
+}
+div.prallax6 > div.box {
+  width: 1000px;
+  background-color: rgba(211, 211, 211, 0.164);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 30px;
+}
+div.prallax6 > div.box > h1 {
+  font-size: 36px;
+  font-family: poppins-bold;
+}
+div.prallax6 > div.box > p {
+  color: white;
+  font-size: 22px;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+div.prallax7 {
+  background-image: url(./media/aleksandr-popov-f3e6YNo3Y98-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  font-family: tektur;
+}
+div.prallax7 > div.box {
+  width: 1000px;
+  background-color: rgba(211, 211, 211, 0.164);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 30px;
+}
+div.prallax7 > div.box > h1 {
+  font-size: 36px;
+  font-family: poppins-bold;
+}
+div.prallax7 > div.box > p {
+  color: white;
+  font-size: 22px;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+p.ds {
+  width: 100%;
+  margin-top: -20px;
+  padding-left: 15px;
+  font-family: tektur;
+  font-size: 10px;
+  text-align: center;
+  user-select: none;
+  color: white;
+}
+p.ds:hover {
+  font-weight: bold;
+}
